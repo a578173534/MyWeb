@@ -70,7 +70,7 @@ public class TwoServlet extends HttpServlet {
         }
         //4.将用户会员卡返还给用户
         response.addCookie(newCard);
-        //5.将消费记录写入到响应
+        //5.将消费记录写入到响应体
         out.print("用户 " + userName + "本次消费 " + xiaofei + " 余额 :" + balance);
     }
 }
