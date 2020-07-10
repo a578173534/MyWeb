@@ -42,4 +42,9 @@
         <welcome-file>login.html</welcome-file>
         <welcome-file>user/find</welcome-file><!--servlet作为默认欢迎资源时，开头斜线必须抹掉-->
     </welcome-file-list>
+
+    <!--注册监听器-->
+    <listener>
+        <listener-class>com.ggs.listener.OneListener</listener-class>
+    </listener>
 </web-app>
