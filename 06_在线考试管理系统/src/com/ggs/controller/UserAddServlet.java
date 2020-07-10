@@ -26,7 +26,7 @@ public class UserAddServlet extends HttpServlet {
         Date startDate = new Date();
         int result = dao.add(user, request);
         Date endDate = new Date();
-        System.out.println("添加消耗时间 = " + (endDate.getTime() - startDate.getTime()) + "毫秒"); // 优化前：10毫秒左右 优化后：2毫秒左右，快了接近5倍
+        System.out.println("添加消耗时间 = " + (endDate.getTime() - startDate.getTime()) + "毫秒"); // 优化前：10毫秒左右 优化后：2毫秒左右，快了5倍
 
         //3.【调用响应对象】将【处理结果】以二进制形式写入到响应体
         response.setContentType("text/html;charset=utf-8");
