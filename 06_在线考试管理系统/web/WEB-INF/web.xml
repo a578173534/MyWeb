@@ -19,7 +19,47 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>com.ggs.controller.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>QuestionAddServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QuestionAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuestionFindServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QuestionFindServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuestionDeleteServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QuestionDeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuestionFindByIdServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QuestionFindByIdServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>QuestionUpdateServlet</servlet-name>
+        <servlet-class>com.ggs.controller.QuestionUpdateServlet</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>QuestionUpdateServlet</servlet-name>
+        <url-pattern>/question/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionFindByIdServlet</servlet-name>
+        <url-pattern>/question/findById</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionDeleteServlet</servlet-name>
+        <url-pattern>/question/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionFindServlet</servlet-name>
+        <url-pattern>/question/find</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuestionAddServlet</servlet-name>
+        <url-pattern>/question/add</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
